@@ -21,4 +21,7 @@ nanochat
 https://github.com/karpathy/nanochat
 
 
+Open AI developer docs
+https://developers.openai.com/api/docs/guides/embeddings
+
 
