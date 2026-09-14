@@ -1,3 +1,6 @@
+
+https://cwpc.in/machine-learning-model-evaluation-metrics-explained-efec02abc738
+
 1. Accuracy
 Accuracy = Correct predictions / Total predictions
 If the model gets 90 out of 100 predictions correct Accuracy = 90%
@@ -14,3 +17,11 @@ Recall measures how many of the actual positives were correctly identified.
 4. F1-Score Balance between Precision and Recall
 Best used when the dataset is imbalanced.
 
+5. Confusion Matrix
+A 2x2 table of all prediction results
+
+6. ROC-AUC
+How well does the model separate classes?
+    ROC Curve - True Positive Rate vs False Positive Rate
+    AUC Score - Area under ROC curve (0.5 = poor, 1.0 = perfect)
+Higher AUC = better model performance.
