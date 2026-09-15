@@ -25,3 +25,14 @@ How well does the model separate classes?
     ROC Curve - True Positive Rate vs False Positive Rate
     AUC Score - Area under ROC curve (0.5 = poor, 1.0 = perfect)
 Higher AUC = better model performance.
+
+https://medium.com/@pur4v/understanding-llm-evaluation-metrics-bleu-rouge-exact-match-and-bertscore-716487e40bdd
+
+BLEU (Bilingual Evaluation Understudy) - best for translation
+ROUGE (Recall-Oriented Understudy for Gisting Evaluation) - best for summarization
+Exact Match (EM) - Factual QA, Classification
+BERTScore - Paraphrasing and open end response
+Unit tests - code generation
+
+
+
