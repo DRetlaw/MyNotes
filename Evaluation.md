@@ -15,7 +15,7 @@ Example: Spam detection
 Recall measures how many of the actual positives were correctly identified.
 
 4. F1-Score Balance between Precision and Recall
-Best used when the dataset is imbalanced.
+In other words, F1 score is a performance metric that combines a classification model's precision and recall into a single number. Best used when the dataset is imbalanced.
 
 5. Confusion Matrix
 A 2x2 table of all prediction results

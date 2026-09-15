@@ -42,3 +42,4 @@ MSE gives the model a numerical measurement of how wrong its predictions are.
 The goal during training is:
 
 Minimize MSE
+

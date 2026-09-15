@@ -3,6 +3,7 @@ Time steps
 Dense and sparse vectors
 Overfitting
 Underfitting
+F1 score
 
 
 Teacher forcing is a training technique for sequential models like Transformers where the ground-truth token from the training dataset is fed as the input for the next time step, instead of the model's own prediction.
@@ -15,3 +16,6 @@ Dense vectors optimize for semantic meaning and conceptual recall.
 Overfitting - memorizing without understanding. he model is too complex and learns the noise instead of the general pattern.
 Underfitting - you did not study enough. The model is too simple to capture the underlying patterns in the data.
 Overfitting vs. Underfitting are two core problems in machine learning where a model fails to generalize to new, unseen data.
+
+F1 score is a performance metric that combines a classification model's precision and recall into a single number
+
