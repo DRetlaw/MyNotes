@@ -1,3 +1,6 @@
+Arena.ai
+https://arena.ai/leaderboard
+
 https://www.youtube.com/watch?v=UsB70Tf5zcE&t=1960s Training an LLM from Scratch, Locally — Angelos Perivolaropoulos, ElevenLabs
 https://github.com/angelos-p/llm-from-scratch
 
