@@ -144,10 +144,6 @@ Sepal Width (cm): 3.3
 Petal Length (cm): 6
 Petal Width (cm): 2.5
 
-Virginica
-Setosa: 0.0%
-Versicolor: 34.3%
-Virginica: 65.7%
 
 Virginica
 Setosa: 0.4%
@@ -196,14 +192,78 @@ Experiment 1D
 =============
 Change: Neurons 5 -> 5
 
+Epoch #: 200 Loss: 0.00655
+
+Accuracy: 0.62
+F1-Score: 0.62
+Precision: 0.62
+
+Recall (Sensitivity): 0.62
+
+Confusion Matrix
+Predicted Positive	Predicted Negative
+Actual Positive	True Positives (TP): 28	False Negatives (FN): 17
+Actual Negative	False Positives (FP): 17	True Negatives (TN): 73
+
+Prediction
 Test Data 1 (Setosa)
+Setosa
+Setosa: 100.0%
+Versicolor: 0.0%
+Virginica: 0.0%
+
 Test Data 2 (Versicolor)
+Versicolor
+Setosa: 0.0%
+Versicolor: 100.0%
+Virginica: 0.0%
+
 Test Data 3 (Virginica)
+Virginica
+Setosa: 0.0%
+Versicolor: 0.4%
+Virginica: 99.6%
+
+
 
 Experiment 1E
 =============
 Change: Neurons 6 -> 6
 
+Epoch #: 200 Loss: 0.01358
+
+Accuracy: 0.73
+F1-Score: 0.73
+Precision: 0.73
+Recall (Sensitivity): 0.73
+
+Confusion Matrix
+Predicted Positive	Predicted Negative
+Actual Positive	True Positives (TP): 33	False Negatives (FN): 12
+Actual Negative	False Positives (FP): 12	True Negatives (TN): 78
+
+Prediction
 Test Data 1 (Setosa)
+Setosa
+Setosa: 99.5%
+Versicolor: 0.5%
+Virginica: 0.0%
+
 Test Data 2 (Versicolor)
+Versicolor
+Setosa: 0.0%
+Versicolor: 99.9%
+Virginica: 0.1%
+
 Test Data 3 (Virginica)
+Virginica
+Setosa: 0.0%
+Versicolor: 0.1%
+Virginica: 99.9%
+
+
+
+Learnings:
+A lower training loss does NOT necessarily mean better test performance.
+More neurons doesn't mean better test performance.
+
