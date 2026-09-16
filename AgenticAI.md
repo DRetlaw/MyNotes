@@ -147,5 +147,13 @@ LangGraph — Articles 11, 12. Exposes the loop as an explicit graph of nodes an
 
 Article 4
 ===========
+Not Available Yet
 
+
+Various prompts
+System/Role Prompt
+Objective/Task Prompt
+Constraint/Guardrail Prompt
+Tool Usage Policy
+Output/Format Schema
 
