@@ -157,6 +157,11 @@ Constraint/Guardrail Prompt
 Tool Usage Policy
 Output/Format Schema
 
+
+
+
+https://chatgpt.com/c/6aab5f85-df80-83ee-a84f-3c585ed2684f (Agentic AI Learning Map)
+
 Transition states examples
 ==========================
 VALID_TRANSITIONS = {
@@ -168,5 +173,111 @@ VALID_TRANSITIONS = {
     "FINAL": [],
     "ERROR": []
 }
+
+
+I beacme aware of idempotency keys while reading about AI agents.
+
+Memory
+======
+structured memory vs semantic memory vs episodic memory.
+
+Memory lifecycle
+             USER / CONVERSATION
+                     │
+                     ▼
+              Memory Candidate
+                     │
+                     ▼
+              Memory Policy
+                     │
+             ┌───────┴───────┐
+             │               │
+        Structured       Semantic
+             │               │
+             ▼               ▼
+          KV/SQL          Vector DB
+             │               │
+             └───────┬───────┘
+                     │
+                 Retrieval
+                     │
+              Relevance filter
+                     │
+               Context Builder
+                     │
+                     ▼
+                    LLM
+
+
+
+complete architecture till Memory stage
+
+                         USER
+                          │
+                          ▼
+                  ┌──────────────┐
+                  │    HARNESS   │
+                  └──────┬───────┘
+                         │
+               Load relevant memory
+                         │
+             ┌───────────┴───────────┐
+             │                       │
+       Structured              Semantic
+        Memory                  Memory
+             │                       │
+             │                 Vector Search
+             │                       │
+             └───────────┬───────────┘
+                         │
+                  Relevant memories
+                         │
+                         ▼
+                  ┌──────────────┐
+                  │ AGENT STATE  │
+                  │              │
+                  │ request      │
+                  │ messages     │
+                  │ tools        │
+                  │ results      │
+                  │ memory       │
+                  │ status       │
+                  └──────┬───────┘
+                         │
+                  Context Builder
+                         │
+                         ▼
+                       LLM
+                         │
+                   tool decision
+                         │
+                         ▼
+                  ┌──────────────┐
+                  │   HARNESS    │
+                  │              │
+                  │ policy       │
+                  │ authorization│
+                  │ approval     │
+                  │ retry        │
+                  │ checkpoint   │
+                  └──────┬───────┘
+                         │
+                         ▼
+                       TOOL
+                         │
+                         ▼
+                   Tool Result
+                         │
+                         ▼
+                    Update State
+                         │
+                         ├──────► Memory Candidate
+                         │
+                         └──────► Checkpoint
+
+
+
+
+
 
 
