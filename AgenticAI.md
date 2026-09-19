@@ -157,3 +157,16 @@ Constraint/Guardrail Prompt
 Tool Usage Policy
 Output/Format Schema
 
+Transition states examples
+==========================
+VALID_TRANSITIONS = {
+    "START": ["LLM"],
+    "LLM": ["TOOL", "FINAL", "ERROR"],
+    "TOOL": ["UPDATE_STATE", "RECOVERY"],
+    "UPDATE_STATE": ["LLM"],
+    "RECOVERY": ["TOOL", "ERROR"],
+    "FINAL": [],
+    "ERROR": []
+}
+
+
