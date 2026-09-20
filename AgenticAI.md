@@ -279,5 +279,8 @@ complete architecture till Memory stage
 
 
 
+What does a LangGraph checkpointer primarily give us?
+B. Persistence of graph state so execution can be resumed/recovered
+
 
 
