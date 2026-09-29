@@ -23,3 +23,6 @@ F1 score is a performance metric that combines a classification model's precisio
 
 Distillation in AI is a machine learning technique used to transfer the knowledge and capabilities of a large, complex "teacher" model into a smaller, faster, and more affordable "student" model
 
+Attention Weights: The final percentages or probabilities obtained by passing the raw attention scores through a softmax function.\(\text{Weights} = \text{softmax}\left(\frac{Q K^T}{\sqrt{d_k}}\right)\) University of Southern California
+
+Attention Scores: The raw dot product of a query (Q) and a key (K), usually scaled down by the square root of the key dimension (\[\sqrt{d_{k}}\]).
