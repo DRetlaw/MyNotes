@@ -16,4 +16,3 @@ RAG - If your retriever is missing obvious matches, what's one thing you'd check
 What is cross-encoder?
 reranking is exactly the right lever, using a cross-encoder to re-score the top candidates from your initial retrieval is a genuine best practice.
 
-MOre to come
