@@ -5,5 +5,10 @@ Component 1: Context & Memory Architecture
 3. /compact
 
 Component 2: Opus 4.8 and Dynamic Multi-Agent Workflows
+1. Subagent
+2. Dynamic workflows
 
+Component 3: Token Financial Management and Effort Control
+
+Component 4: Ambient Execution and Safety Navigation
 
